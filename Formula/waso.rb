@@ -1,21 +1,25 @@
 class Waso < Formula
-  desc "The wasome application"
-  homepage "https://github.com/Randware/Wasome"
+  desc "The WebAssembly Language for Everyone"
+  homepage "https://wasome.dev/"
   version "0.1.0"
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/Randware/Wasome/releases/download/v0.1.0/wasome-aarch64-apple-darwin.tar.xz"
+      sha256 "764b8d49e97beb24e2a34c1cae271f07ccb680346fd7bc8819379dedb9071ffc"
     end
     if Hardware::CPU.intel?
       url "https://github.com/Randware/Wasome/releases/download/v0.1.0/wasome-x86_64-apple-darwin.tar.xz"
+      sha256 "8ae263f1f7cda3847a4e39655cdd820ab5e1c17b86d1aa72108239a554e4ce63"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
       url "https://github.com/Randware/Wasome/releases/download/v0.1.0/wasome-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "ff140d249dcbd40f17048e98d225d50210812dff35d4aef21dadcb6a27d06677"
     end
     if Hardware::CPU.intel?
       url "https://github.com/Randware/Wasome/releases/download/v0.1.0/wasome-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "9860775ea081e1afcccbf6a64131082e6e0646aee1e8d4a7645d725d883b0bbb"
     end
   end
 
