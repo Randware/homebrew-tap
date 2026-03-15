@@ -5,21 +5,21 @@ class Wasome < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/Randware/Wasome/releases/download/v0.1.0/wasome-aarch64-apple-darwin.tar.xz"
-      sha256 "a329ef457959fa0a51320a99ab787df9fb8ab1bdade730cd2ac9f31b42d9f778"
+      sha256 "7360acfd6564962d13997812fea5c379e993a3cc388e86e12d6e7cd07c3c8942"
     end
     if Hardware::CPU.intel?
       url "https://github.com/Randware/Wasome/releases/download/v0.1.0/wasome-x86_64-apple-darwin.tar.xz"
-      sha256 "ae81bf82863fbbfeda9c4d0b2daf22a8055f64be7cc1c6cebe96ca9daded7827"
+      sha256 "755d91766d380e9326f550c934a5065cff2f08384c40979ffaa0054fa9661964"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
       url "https://github.com/Randware/Wasome/releases/download/v0.1.0/wasome-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "39f72654bb1f398d3d3e186c076b4e57e334dee2d330609e2a9613d3d9b2c4e9"
+      sha256 "31f6e67bde3af8dd0293fa01c34da273da22946bf74e9b517fbcfec0b566fe7f"
     end
     if Hardware::CPU.intel?
       url "https://github.com/Randware/Wasome/releases/download/v0.1.0/wasome-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "3ccd76366158730cd5fa444670329c0d4ff1c90cf35af0a3ca2b88d1022d3a1e"
+      sha256 "746df8313e25ddd4dbf07cf0483eaa0eff09a83e8baef909f4c73ef9ae1942c1"
     end
   end
 
